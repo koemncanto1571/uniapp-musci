@@ -1,0 +1,10 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "music-head": "/components/musicHead/musicHead",
+    "u-modal": "/node-modules/uview-ui/components/u-modal/u-modal",
+    "u-button": "/node-modules/uview-ui/components/u-button/u-button",
+    "u-swiper": "/node-modules/uview-ui/components/u-swiper/u-swiper",
+    "m-for-skeleton": "/components/m-for-skeleton/m-for-skeleton"
+  }
+}

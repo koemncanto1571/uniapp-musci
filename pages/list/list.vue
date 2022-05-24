@@ -127,8 +127,7 @@
 			}
 		},
 		computed:{
-			formatCount:function(){
-				return function(val) {
+			formatCount:()=> (val)=>{
 					if(val >= 10000 && val <= 100000000) {
 							 val /= 1000;
 							 return val.toFixed(1) + '万'
@@ -141,7 +140,6 @@
 							return val
 						}
 				}
-       }
 		}
 	}
 </script>

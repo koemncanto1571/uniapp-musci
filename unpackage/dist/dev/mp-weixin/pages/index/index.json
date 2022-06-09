@@ -2,8 +2,12 @@
   "navigationStyle": "custom",
   "usingComponents": {
     "music-head": "/components/musicHead/musicHead",
-    "u-modal": "/node-modules/uview-ui/components/u-modal/u-modal",
+    "u-popup": "/node-modules/uview-ui/components/u-popup/u-popup",
+    "u-input": "/node-modules/uview-ui/components/u-input/u-input",
+    "u-code": "/node-modules/uview-ui/components/u-code/u-code",
     "u-button": "/node-modules/uview-ui/components/u-button/u-button",
+    "u--input": "/node-modules/uview-ui/components/u--input/u--input",
+    "u--form": "/node-modules/uview-ui/components/u--form/u--form",
     "u-swiper": "/node-modules/uview-ui/components/u-swiper/u-swiper",
     "m-for-skeleton": "/components/m-for-skeleton/m-for-skeleton"
   }

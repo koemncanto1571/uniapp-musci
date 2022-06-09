@@ -56,6 +56,9 @@
 }
 
 
+.u-popup__content.data-v-57280228 {
+  width: 1000rpx;
+}
 .login-btn.data-v-57280228 {
   font-size: 34rpx;
   width: 300rpx;

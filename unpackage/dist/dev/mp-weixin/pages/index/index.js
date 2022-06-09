@@ -98,17 +98,29 @@ try {
     musicHead: function() {
       return __webpack_require__.e(/*! import() | components/musicHead/musicHead */ "components/musicHead/musicHead").then(__webpack_require__.bind(null, /*! @/components/musicHead/musicHead.vue */ 173))
     },
-    uModal: function() {
-      return Promise.all(/*! import() | node-modules/uview-ui/components/u-modal/u-modal */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-modal/u-modal")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-modal/u-modal.vue */ 180))
+    uPopup: function() {
+      return Promise.all(/*! import() | node-modules/uview-ui/components/u-popup/u-popup */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-popup/u-popup")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-popup/u-popup.vue */ 180))
+    },
+    uInput: function() {
+      return Promise.all(/*! import() | node-modules/uview-ui/components/u-input/u-input */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-input/u-input")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-input/u-input.vue */ 188))
+    },
+    uCode: function() {
+      return Promise.all(/*! import() | node-modules/uview-ui/components/u-code/u-code */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-code/u-code")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-code/u-code.vue */ 196))
     },
     uButton: function() {
-      return Promise.all(/*! import() | node-modules/uview-ui/components/u-button/u-button */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-button/u-button")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-button/u-button.vue */ 188))
+      return Promise.all(/*! import() | node-modules/uview-ui/components/u-button/u-button */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-button/u-button")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-button/u-button.vue */ 204))
+    },
+    "u-Input": function() {
+      return Promise.all(/*! import() | node-modules/uview-ui/components/u--input/u--input */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u--input/u--input")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u--input/u--input.vue */ 214))
+    },
+    "u-Form": function() {
+      return Promise.all(/*! import() | node-modules/uview-ui/components/u--form/u--form */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u--form/u--form")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u--form/u--form.vue */ 219))
     },
     uSwiper: function() {
-      return Promise.all(/*! import() | node-modules/uview-ui/components/u-swiper/u-swiper */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-swiper/u-swiper")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-swiper/u-swiper.vue */ 198))
+      return Promise.all(/*! import() | node-modules/uview-ui/components/u-swiper/u-swiper */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-swiper/u-swiper")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-swiper/u-swiper.vue */ 225))
     },
     mForSkeleton: function() {
-      return __webpack_require__.e(/*! import() | components/m-for-skeleton/m-for-skeleton */ "components/m-for-skeleton/m-for-skeleton").then(__webpack_require__.bind(null, /*! @/components/m-for-skeleton/m-for-skeleton.vue */ 206))
+      return __webpack_require__.e(/*! import() | components/m-for-skeleton/m-for-skeleton */ "components/m-for-skeleton/m-for-skeleton").then(__webpack_require__.bind(null, /*! @/components/m-for-skeleton/m-for-skeleton.vue */ 233))
     }
   }
 } catch (e) {
@@ -185,6 +197,79 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -345,8 +430,93 @@ var _api = __webpack_require__(/*! ../../common/api.js */ 145); //
 //
 //
 //
-var musicHead = function musicHead() {__webpack_require__.e(/*! require.ensure | components/musicHead/musicHead */ "components/musicHead/musicHead").then((function () {return resolve(__webpack_require__(/*! ../../components/musicHead/musicHead.vue */ 173));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var mForSkeleton = function mForSkeleton() {__webpack_require__.e(/*! require.ensure | components/m-for-skeleton/m-for-skeleton */ "components/m-for-skeleton/m-for-skeleton").then((function () {return resolve(__webpack_require__(/*! @/components/m-for-skeleton/m-for-skeleton */ 206));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { data: function data() {return { topList: [], isLoading: true, list3: ['https://cdn.uviewui.com/uview/swiper/swiper3.png', 'https://cdn.uviewui.com/uview/swiper/swiper2.png', 'https://cdn.uviewui.com/uview/swiper/swiper1.png'], userImg: '../../static/未登录.png', userName: '未登录', loginStatus: '立即登录', show: false, // title:'检测到该微信号未注册过云音乐账号，请尝试使用手机号进行登录',
-      content: '检测到该微信号未注册过云音乐账号，请尝试使用手机号进行登录' };}, components: { musicHead: musicHead, mForSkeleton: mForSkeleton }, onLoad: function onLoad() {var _this = this;(0, _api.topList)().then(function (res) {if (res.length) {setTimeout(function () {_this.topList = res;_this.isLoading = false;}, 1000);}});}, methods: { handleToList: function handleToList(listId) {uni.navigateTo({ url: "../list/list?listId=" + listId });}, handleToSearch: function handleToSearch() {uni.navigateTo({ url: '../search/search' });}, loginConfirm: function loginConfirm() {this.show = false, this.loginStatus = '退出登录', this.userImg = '../../static/头像.png';}, loginHandle: function loginHandle() {if (this.loginStatus === '立即登录') {this.show = true;} else {this.loginStatus = '立即登录', this.userImg = '../../static/未登录.png';}} } };exports.default = _default;
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var musicHead = function musicHead() {__webpack_require__.e(/*! require.ensure | components/musicHead/musicHead */ "components/musicHead/musicHead").then((function () {return resolve(__webpack_require__(/*! ../../components/musicHead/musicHead.vue */ 173));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var mForSkeleton = function mForSkeleton() {__webpack_require__.e(/*! require.ensure | components/m-for-skeleton/m-for-skeleton */ "components/m-for-skeleton/m-for-skeleton").then((function () {return resolve(__webpack_require__(/*! @/components/m-for-skeleton/m-for-skeleton */ 233));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { data: function data() {return { topList: [], isLoading: true, list3: ['https://cdn.uviewui.com/uview/swiper/swiper3.png', 'https://cdn.uviewui.com/uview/swiper/swiper2.png', 'https://cdn.uviewui.com/uview/swiper/swiper1.png'], userImg: '../../static/未登录.png', userName: '未登录', loginStatus: '立即登录', show: false, // title:'检测到该微信号未注册过云音乐账号，请尝试使用手机号进行登录',
+      content: '检测到该微信号未注册过云音乐账号，请尝试使用手机号进行登录', value: '', tips: '', phone: '', code: '', nickname: '', password: '', loginShow: true, profile: [] };}, components: { musicHead: musicHead, mForSkeleton: mForSkeleton }, onLoad: function onLoad() {var _this = this; // anonimous().then(res=>{
+    // 	console.log(res)
+    // })
+    (0, _api.loignStatus)().then(function (res) {console.log(res);});(0, _api.topList)().then(function (res) {if (res.length) {setTimeout(function () {_this.topList = res;_this.isLoading = false;}, 1000);}});}, methods: { handleToList: function handleToList(listId, cookie) {uni.navigateTo({ url: "../list/list?listId=" + listId });}, handleToSearch: function handleToSearch() {uni.navigateTo({ url: '../search/search' });}, loginConfirm: function loginConfirm() {var _this2 = this;(0, _api.loginCellphone)(this.phone, this.password).then(function (res) {console.log(res);_this2.profile = res[1].data.profile;_this2.userName = res[1].data.profile.nickname; // localStorage.setItem('token', res[1].data.cookie)
+        (0, _api.loignStatus)().then(function (res) {console.log(res);});}); // loignStatus().then(res=>{
+      // 	console.log(res)
+      // })
+      this.show = false, this.loginStatus = '退出登录', this.userImg = '../../static/头像.png';}, loginHandle: function loginHandle() {(0, _api.loignOut)().then(function (res) {console.log(res);});if (this.loginStatus === '立即登录') {this.show = true;} else {this.loginStatus = '立即登录', this.userImg = '../../static/未登录.png';}}, open: function open() {// console.log('open');
+    }, close: function close() {this.show = false; // console.log('close');
+    }, codeChange: function codeChange(text) {this.tips = text;}, getCode: function getCode() {var _this3 = this;if (this.$refs.uCode.canGetCode) {// 模拟向后端请求验证码
+        (0, _api.login)(this.phone).then(function (res) {console.log(res);});uni.showLoading({ title: '正在获取验证码' });setTimeout(function () {uni.hideLoading(); // 这里此提示会被this.start()方法中的提示覆盖
+          uni.$u.toast('验证码已发送'); // 通知验证码组件内部开始倒计时
+          _this3.$refs.uCode.start();}, 2000);} else {uni.$u.toast('倒计时结束后再发送');}}, navToRegister: function navToRegister() {this.loginShow = false;}, registerConfirm: function registerConfirm() {(0, _api.register)(this.phone, this.code, this.password, this.nickname).then(function (res) {console.log(res);});this.show = false;} } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),

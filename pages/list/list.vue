@@ -88,7 +88,7 @@
 <script>
 	import musicHead from "../../components/musicHead/musicHead.vue"
 	import "@/common/iconfont.css"
-	import {list} from "../../common/api.js"
+	import {list,anonimous} from "../../common/api.js"
 	export default {
 		data() {
 			return {

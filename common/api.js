@@ -74,3 +74,52 @@ export function searchSuggest(word) {
 		method:'GET'
 	})
 }
+
+export function login(phone){
+	return uni.request({
+		url:`${baseUrl}/captcha/sent?phone=${phone}`,
+		method:'POST'
+	})
+}
+
+export function verify(phone,code){
+	return uni.request({
+		url:`${baseUrl}/captcha/verify?phone=${phone}&captcha=${code}`,
+		method:'POST'
+	})
+}
+
+export function register(phone,code,password,nickname){
+	return uni.request({
+		url:`${baseUrl}/register/cellphone?phone=${phone}&password=${password}&captcha=${code}&nickname=${nickname}`,
+		method:'POST'
+	})
+}
+
+export function loginCellphone(phone,password){
+	return uni.request({
+		url:`${baseUrl}/login/cellphone?phone=${phone}&password=${password}`,
+		method:'POST'
+	})
+}
+
+export function loignOut(){
+	return uni.request({
+		url:`${baseUrl}/logout`,
+		method:'POST'
+	})
+}
+
+export function loignStatus(){
+	return uni.request({
+		url:`${baseUrl}/login/status`,
+		method:'POST'
+	})
+}
+
+export function anonimous(){
+	return uni.request({
+		url:`${baseUrl}/register/anonimous`,
+		method:'POST'
+	})
+}

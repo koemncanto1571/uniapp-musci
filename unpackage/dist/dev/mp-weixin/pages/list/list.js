@@ -291,8 +291,7 @@ var _api = __webpack_require__(/*! ../../common/api.js */ 145);var musicHead = f
     } },
 
   computed: {
-    formatCount: function formatCount() {
-      return function (val) {
+    formatCount: function formatCount() {return function (val) {
         if (val >= 10000 && val <= 100000000) {
           val /= 1000;
           return val.toFixed(1) + '万';
@@ -304,8 +303,7 @@ var _api = __webpack_require__(/*! ../../common/api.js */ 145);var musicHead = f
         {
           return val;
         }
-      };
-    } } };exports.default = _default;
+      };} } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
